@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="MiPaginaFilm1.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1 " />
+  <meta charset="ISO-8859-1 ">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <title>Film web</title>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MOVIE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">INICIAR SECIÓN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Comenzar prueva gratis</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Peliculas
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Terror</a></li>
+                  <li><a class="dropdown-item" href="#">Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Animadas</a></li>
+                  <li><a class="dropdown-item" href="#">Aventuras</a></li>
+                  <li><a class="dropdown-item" href="#">Romance</a></li>
+                  <li><a class="dropdown-item" href="#">Comedia</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Series
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Terror</a></li>
+                  <li><a class="dropdown-item" href="#">Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Animadas</a></li>
+                  <li><a class="dropdown-item" href="#">Aventuras</a></li>
+                  <li><a class="dropdown-item" href="#">Romance</a></li>
+                  <li><a class="dropdown-item" href="#">Comedia</a></li>
+
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Que quieres ver" aria-label="Search">
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="img-principal" id="showcase">
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./IMAGENESMIPROYECTO/sonic-la-pelicula-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block ">
+              <h5 class="">SONIC 2</h5>
+              <p>DISFRUTA LA AHORA EN MUVIE </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./IMAGENESMIPROYECTO/animales-fantasticos-los-secretos-de-dumbledore-.jpg"
+              class="d-block width-100%" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>ANIMALES FANTASTICOS
+                LOS SECRETOS DE DUMBLENDOR
+              </h5>
+              <p>DISFRUTA LA AHORA EN MUVIE</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="IMAGENESMIPROYECTO/kimetsu-no-yaiba-mt-natagumo.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>KIMETSU NO YAIBA</h5>
+              <p>>DISFRUTA LA AHORA EN MUVIE</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+    <section id="categorias">
+      <br>
+      <h2 class="peliculas">PELICULAS</h2>
+      <br>
+      <div class="imageness">
+        <!-- e-card 1 -->
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/1024_2000.jpeg" alt="error" />
+          <div class="img-content">
+            <h3>Avatar 2</h3>
+            <br><br>
+            <a href="#foot-menu" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+
+
+        <!-- e-card 1 -->
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/minions-el-origen-de.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Minions El origen de Gru</h3>
+            <br><br>
+            <a href="#" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+        <!-- e-card 1 -->
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/dog.jpg" alt="error" />
+          <div class="img-content">
+            <h3>League of Super-Pets</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/anime.jpg" alt="error" />
+          <div class="img-content">
+            <h3>서울대작전</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/doctor strange.jpg" alt="error" />
+          <div class="img-content">
+            <h3></h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/amor y trueno .jpg" alt="error" />
+          <div class="img-content">
+            <h3>THOR Love and thunder</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/caballero-luna-poster-fotogramas-1646305531.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Moon Knight</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/jurassic-world-dominion.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Jurassic world dominion</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/pinocho.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Pinocho</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/ronda error.jpg.webp" alt="error" />
+          <div class="img-content">
+            <h3>Ronda error</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/raya-y-el-ultimo-dragon.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Raya y el ultimo dragon</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <br>
+    <section>
+      <h2 class="series">SERIES</h2>
+      <br>
+      <div class="imageness">
+        <!-- e-card 1 -->
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/la casa del dragon jpeg.jpeg" alt="error" />
+          <div class="img-content">
+            <h3>La Casa Del Dragón</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/anilos.jpeg" alt="error" />
+          <div class="img-content">
+            <h3>Los Anillos Del Poder</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/Segunda_temporada.webp" alt="error" />
+          <div class="img-content">
+            <h3>Westworld</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/the boys.jpg" alt="error" />
+          <div class="img-content">
+            <h3>The Boys</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/vikingos-valhalla.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Vikingos Valhalla</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/she hulk.webp" alt="error" />
+          <div class="img-content">
+            <h3>She Hulh</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/serie1.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Bienvenidos al Edén</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/serie2.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Dinstía</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/serie3.jpg" alt="error" />
+          <div class="img-content">
+            <h3>New Amsterdam</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/serie4.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Falsa Identidad</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./IMAGENESMIPROYECTO/serie5.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Titanes</h3>
+            <br><br>
+            <a href="" class="boton boton-primary">! Ver ahora¡</a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <br><br><br><br>
+    <section>
+      <img src="IMAGENESMIPROYECTO/" alt="">
+      <h2 class="h22">Disfruta de películas, series y documentales nunca antes vistos. encuetra los en movie</h2>
+      <div class=" imge-imagine">
+        <div class="imge-mov1">
+          <img src="IMAGENESMIPROYECTO/IMGnuevas/original.jpg" alt="">
+        </div>
+        <div class="imge-mov2">
+          <img src="IMAGENESMIPROYECTO/IMGnuevas/original (1).jpg" alt="">
+        </div>
+        <div class="imge-mov3">
+          <img src="IMAGENESMIPROYECTO/IMGnuevas/original (2).jpg" alt="">
+        </div>
+        <div class="imge-mov4">
+          <img src="IMAGENESMIPROYECTO/IMGnuevas/original (3).jpg" alt="">
+        </div>
+        <div class="imge-mov5">
+          <img src="IMAGENESMIPROYECTO/IMGnuevas/original (4).jpg" alt="">
+        </div>
+        <div class="imge-mov6">
+          <img src="IMAGENESMIPROYECTO/IMGnuevas/original (5).jpg" alt="">
+        </div>
+        <div class="imge-mov7">
+          <img src="IMAGENESMIPROYECTO/IMGnuevas/original (6).jpg" alt="">
+        </div>
+        <div class="imge-mov8">
+          <img src="IMAGENESMIPROYECTO/IMGnuevas/original (7).jpg" alt="">
+        </div>
+        <div class="imge-mov9">
+          <img src="IMAGENESMIPROYECTO/IMGnuevas/original (8).jpg" alt="">
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+<footer id="FOOTER">
+
+  <h2 class="movie"> &copy; MOVIE <br><br><a href=""> MV ☪ Registrate para ver todo el contenido ⋆ </a> </h2>
+</footer>
+
+</html>
